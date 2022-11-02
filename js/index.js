@@ -46,3 +46,73 @@ if (summ >= 500 && summ < 800) {
       " грн."
   );
 }
+
+// task 2.1
+
+console.group("task 2.1 while");
+
+let i = 25;
+const lim = 0;
+while (i >= lim) {
+  console.log(i);
+  i--;
+}
+console.groupEnd();
+
+console.group("task 2.1 let");
+
+const limA = 0;
+for (let a = 25; a >= limA; a--) {
+  console.log(a);
+}
+
+console.groupEnd();
+
+// task 2.2
+
+console.group("task 2.2 while");
+let c = 10;
+const limC = 50;
+while (c <= limC) {
+  console.log(c);
+  c += 5;
+}
+
+console.groupEnd();
+
+console.group("task 2.2 let");
+
+const limE = 50;
+for (let e = 10; e <= limE; e += 5) {
+  console.log(e);
+}
+
+console.groupEnd();
+
+// task 2.3
+
+console.group("task 2.3 while");
+
+let summF = 1;
+const limF = 100;
+let f = 2;
+
+while (f <= limF) {
+  summF += f;
+  f++;
+}
+
+console.log(summF);
+
+console.groupEnd();
+
+console.group("task 2.3 let");
+
+let summNumbers = 1;
+const summLim = 100;
+for (i = 2; i <= summLim; i++) {
+  summNumbers += i;
+}
+console.log(summNumbers);
+
+console.groupEnd();
