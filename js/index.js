@@ -11,13 +11,13 @@ if (number === 10) {
 
 const test = true;
 
-if (test === true) {
+if (test) {
   console.log("1.2 Верно");
 } else {
   console.log("1.2 Неверно");
 }
 
-if (test !== true) {
+if (!test) {
   console.log("1.2 Верно");
 } else {
   console.log("1.2 Неверно");
@@ -27,13 +27,13 @@ if (test !== true) {
 
 const summ = Number(prompt("Введите сумму покупки:"));
 
-if (summ >= 500 && summ < 800) {
+if (summ > 500 && summ < 800) {
   alert(
     "Ваша скидка составила 3%\nОбщая сумма покупки: " +
       summ * (1 - 0.03) +
       " грн."
   );
-} else if (summ >= 800) {
+} else if (summ > 800) {
   alert(
     "Ваша скидка составила 5%\nОбщая сумма покупки: " +
       summ * (1 - 0.05) +
